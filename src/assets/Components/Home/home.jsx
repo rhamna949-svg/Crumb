@@ -1,16 +1,15 @@
-
 import React, { useState, useEffect } from "react";
-import cake from "../../../assets/cake.png";
+import cake from "../../cake.png";
 import croissant from "../../croissant.png";
-import cherry from "../../Cherry.PNG";
-import coffee from "../../Coffe.PNG";
+import cherry from "../../Cherry.PNG"
 import cold from "../../Cold coffee.PNG";
-import Rain from "../../../assets/Rain.png";
+import coffee from "../../Coffe.PNG";
+import Rain from "../../Rain.png";
 import { Link } from "react-router-dom";
-import tea from "../../../assets/tea.PNG";
-import strawberry from "../../../assets/strawberry.PNG";
-import pairing from "../../../assets/pairing.PNG";
-import hype from "../../../assets/hype.PNG";
+import tea from "../../tea.PNG";
+import strawberry from "../../strawberry.PNG";
+import pairing from "../../pairing.PNG";
+import hype from "../../hype.PNG";
 
 
 const Home = () => {

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import night from "../../night.png";
 import coffee from "../../Coffe.PNG";
 import croissant from "../../croissant.png";
-
 const About = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
