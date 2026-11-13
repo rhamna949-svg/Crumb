@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState } from "react";
+
 import cake from "../../cake.png";
 import croissant from "../../croissant.png";
-import cherry from "../../Cherry.PNG"
+import cherry from "../../Cherry.PNG";
 import cold from "../../Cold coffee.PNG";
 import coffee from "../../Coffe.PNG";
 import Rain from "../../Rain.png";
@@ -11,24 +13,11 @@ import strawberry from "../../strawberry.PNG";
 import pairing from "../../pairing.PNG";
 import hype from "../../hype.PNG";
 
-
 const Home = () => {
     const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [isSubscribed, setIsSubscribed] = useState(false);
     const [subscribeError, setSubscribeError] = useState("");
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-    fetch("http://localhost:3000/products")
-        .then((response) => response.json())
-        .then((result) => {
-            setProducts(result.data);
-        })
-        .catch((error) => {
-            console.log("Error fetching products:", error);
-        });
-}, []);
-console.log(products);
 
     function openSubscribe() {
         setIsSubscribeOpen(true);
@@ -470,7 +459,7 @@ console.log(products);
                     </div>
                 </section>
 
-                {/* Center Subscription Popup */}
+                {/* Subscription Popup */}
                 {isSubscribeOpen && (
                     <div
                         className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#241416]/70 px-4 py-6 backdrop-blur-sm"

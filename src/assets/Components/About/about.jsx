@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import night from "../../night.png";
 import coffee from "../../Coffe.PNG";
 import croissant from "../../croissant.png";
+
 const About = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
@@ -452,7 +456,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* CUSTOM SUBSCRIBE POPUP */}
+        {/* SUBSCRIBE POPUP */}
         {isSubscribed && (
           <div
             className="fixed inset-0 z-[100] flex items-center justify-center bg-[#241512]/60 px-5 backdrop-blur-sm"
