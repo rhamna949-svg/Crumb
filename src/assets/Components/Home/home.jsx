@@ -1,8 +1,6 @@
-
 import React, { useState } from "react";
-
 import cake from "../../cake.png";
-import croissant from "../../croissant.png";
+import croissant from "../../croissant.PNG";
 import cherry from "../../Cherry.PNG";
 import cold from "../../Cold coffee.PNG";
 import coffee from "../../Coffe.PNG";

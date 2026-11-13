@@ -1,11 +1,8 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import night from "../../night.png";
 import coffee from "../../Coffe.PNG";
-import croissant from "../../croissant.png";
-
+import croissant from "../../croissant.PNG";
 const About = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
